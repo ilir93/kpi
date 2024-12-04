@@ -1,0 +1,104 @@
+/* Modern Minimalist Design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fafafa;
+  --text-color: #2d3436;
+  --accent: #00b894;
+  --success: #00cec9;
+  --warning: #fdcb6e;
+  --danger: #ff7675;
+  --card-bg: #ffffff;
+  --border: #e1e1e1;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fairness-score {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.score-label {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.score-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.score-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: var(--bg-color);
+  transform: translateY(-1px);
+}

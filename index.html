@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI Fairness Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/fairness-meter.css">
+    <link rel="stylesheet" href="styles/team-table.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>KPI Fairness Dashboard</h1>
+            <div class="header-right">
+                <div class="fairness-score">
+                    <span class="score-label">Company Fairness Score:</span>
+                    <span class="score-value">75%</span>
+                    <span class="score-status">Good</span>
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Admin</span>
+                    <button class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="dashboard">
+            <section class="team-performance full-width">
+                <!-- Content will be dynamically inserted by JavaScript -->
+            </section>
+        </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

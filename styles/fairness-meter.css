@@ -1,0 +1,48 @@
+/* Fairness Meter Styles */
+.fairness-meter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fairness-meter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.meter-gauge {
+    height: 30px;
+    background-color: #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.meter-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--warning-color) 0%, var(--success-color) 100%);
+    transition: width 0.5s ease-in-out;
+}
+
+.meter-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+.meter-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.meter-status {
+    font-size: 1.25rem;
+    color: var(--success-color);
+    font-weight: 500;
+}

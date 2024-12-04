@@ -1,0 +1,59 @@
+/* Team Performance Grid */
+.team-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Team Card Styles */
+.team-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* KPI List Styles */
+.kpi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.kpi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.kpi-item.success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: var(--success-color);
+}
+
+.kpi-item.warning {
+    background-color: rgba(241, 196, 15, 0.1);
+    color: var(--warning-color);
+}
+
+.kpi-item.danger {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: var(--danger-color);
+}
+
+.last-updated {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: right;
+}
